@@ -2,22 +2,10 @@
 
 {
 
-  const otherProps =   {
-    r: 4,
-    color: 'red',
-  };
+const d = new Date(2019, 9);
+// console.log(d);
+d.setHours(10, 20, 30);
+d.setHours(d.getHours()+ 2, 5, 6);
+console.log(d);
 
-  const point = {
-    x: 100,
-    y: 180,
-    ...otherProps,
-  };
-  // console.log(point);
-
-
-  const {x, r, ...others} = point;
-  console.log(x);
-  console.log(r);
-  console.log(others);
-
-  }
+}
